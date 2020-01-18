@@ -254,10 +254,6 @@ img {
 	width: 45%
 }
 
-#facts img {
-	align-self: baseline;
-}
-
 ul {
 	margin-top: 2%;
 	list-style-type: square;
@@ -358,5 +354,18 @@ ul {
 	}
 	#copyright {
 		margin: 10% 0 5%;
+	}
+	#services-main {
+		flex-direction: column;		
+	}
+	.main-box {
+		width: 100%;
+	}
+	#facts {
+		flex-direction: column;
+	}
+	#facts div {
+		width: 100%;
+		margin-bottom: 5%;
 	}
 }
