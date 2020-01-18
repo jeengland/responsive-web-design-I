@@ -271,10 +271,6 @@ ul {
 	justify-content: center;
 }
 
-@media (max-width: 500px) { 
-	
-}
-
 @media (max-width: 800px) {
 	body {
 		width: 100%;
@@ -293,5 +289,27 @@ ul {
 	}
 	footer {
 		width: 95%;
+	}
+}
+
+@media (max-width: 500px) { 
+	nav img {
+		margin: 5% 0 5%
+	}
+	#links {
+		flex-flow: column;
+	}
+	#links a {
+		width: 100%;
+		text-align: center;
+		padding: 3% 0 3%;
+		border-top: grey 1px solid;
+		font-size: 120%;
+	}
+	#links a:last-of-type {
+		border-bottom: grey 1px solid;
+	}
+	h1 {
+		 font-size: 400%;
 	}
 }
