@@ -177,7 +177,7 @@ footer {
 }
 
 #copyright {
-	margin-top: 2%;
+	margin: 5% 0 2%;
 	text-align: center;
 }
 
@@ -279,7 +279,7 @@ ul {
 		flex-flow: column-reverse;
 	}
 	nav img {
-		margin: 15% 0 15%;
+		margin: 5% 0 5%;
 	}
 	#hero img {
 		 display: none;
@@ -289,6 +289,12 @@ ul {
 	}
 	footer {
 		width: 95%;
+	}
+	#contact p {
+		margin-top: 2%;
+	}
+	#copyright {
+		margin: 5% 0 5%;
 	}
 }
 
@@ -311,5 +317,31 @@ ul {
 	}
 	h1 {
 		 font-size: 400%;
+	}
+	#above {
+		flex-direction: column;
+	}
+	#above div:first-of-type {
+		margin-top: 10%;
+	}
+	#above div {
+		width: 100%;
+		margin-bottom: 10%;
+	}
+	main img {
+		margin-bottom: 10%;
+	}
+	#below {
+		flex-direction: column;
+	}
+	#below div {
+		width: 100%;
+		margin-bottom: 10%;
+	}
+	#contact p {
+		margin-top: 4%;
+	}
+	#copyright {
+		margin: 10% 0 5%;
 	}
 }
