@@ -70,10 +70,9 @@ h1, h2, h3, h4, h5 {
 /* Body styling */
 
 body {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	font-size: 120%;
+	width: 800px;
+	margin: auto;
+	max-width: 100%;
 }
 
 /* Header styling  */
@@ -90,20 +89,21 @@ header {
 /* Navbar styling */
 
 nav {
-	position: fixed; 
-	z-index: 10;
-	top: 0;
 	width: 100%;
 	padding: 0.75% 0 0.75%;
-	background-color: grey;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 }
 nav a {
 	text-decoration: none;
-	color: white;
-	font-size: 120%;
+	color: grey;
+}
+
+#links {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
 }
 
 /* Hero image styling */
@@ -124,7 +124,7 @@ nav a {
 h1 {
 	font-size: 500%;
 	text-align: center;
-	
+	max-width: 100%;
 }
 h2 {
 	border: solid black 2px;
@@ -137,15 +137,11 @@ h2 {
 /* Main content area styling */
 
 main {
+	margin: auto;
 	margin-bottom: 5%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-around;
 }
 
 #above {
-	width: 90%;
 	border-top: black 1px solid;
 	display: flex;
 	justify-content: space-between;
@@ -154,8 +150,12 @@ main {
 	width: 45%;
 	margin: 2% 0 2%;
 }
+
+main img {
+	max-width: 100%;
+}
+
 #below {
-	width: 90%;
 	border-bottom: black 1px solid;
 	display: flex;
 	justify-content: space-between;
@@ -169,9 +169,7 @@ main {
 
 footer {
 	margin-bottom: 5%;
-	width: 90%;
-	display: flex;
-	flex-direction: column;
+	margin: auto;
 }
 
 #contact p {
@@ -180,7 +178,7 @@ footer {
 
 #copyright {
 	margin-top: 2%;
-	align-self: center;	
+	text-align: center;
 }
 
 /* ----------------Styling for services.html---------------- */
@@ -273,12 +271,27 @@ ul {
 	justify-content: center;
 }
 
-@media only screen and (max-width: 1024px) {
-	#services main {
-		flex-direction: column;
-		justify-content: center;
+@media (max-width: 500px) { 
+	
+}
+
+@media (max-width: 800px) {
+	body {
+		width: 100%;
+	} 
+	nav {
+		flex-flow: column-reverse;
 	}
-	.main-box {
-		width: 80%;
+	nav img {
+		margin: 15% 0 15%;
 	}
-  }
+	#hero img {
+		 display: none;
+	}
+	main {
+		width: 95%;
+	}
+	footer {
+		width: 95%;
+	}
+}
