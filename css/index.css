@@ -185,12 +185,15 @@ footer {
 
 /* Body styling */
 
+img {
+	max-width: 100%;
+}
+
 #services header {
 	margin-bottom: 4%;
 }
 
 #services-header {
-	width: 90%;
 	margin-top: 5%;
 	display: flex;
 	flex-direction: column;
@@ -211,7 +214,6 @@ footer {
 /* Main styling */
 
 #services-main {
-	width: 90%;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -244,9 +246,9 @@ footer {
 /* Styling for facts section */
 
 #facts {
-	width: 90%;
 	display: flex;
 	justify-content: space-between;
+	margin: auto;
 }
 #facts div {
 	width: 45%
@@ -295,6 +297,19 @@ ul {
 	}
 	#copyright {
 		margin: 5% 0 5%;
+	}
+	#services-header {
+		width: 95%;
+		margin: auto;
+	}
+	#services-main {
+		width: 95%;
+	}
+	.main-box {
+		width: 48%;
+	}
+	#facts {
+		width: 95%;
 	}
 }
 
